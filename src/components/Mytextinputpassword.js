@@ -1,10 +1,9 @@
-/*Custom TextInput*/
 import React from "react";
 import { View, TextInput, Dimensions } from "react-native";
 
 const window = Dimensions.get("window");
 const screen = Dimensions.get("screen");
-const Mytextinput = (props) => {
+const Mytextinputpassword = (props) => {
   return (
     <View
       style={{
@@ -31,8 +30,10 @@ const Mytextinput = (props) => {
         style={props.style}
         blurOnSubmit={false}
         value={props.value}
+        secureTextEntry={props.secureTextEntry}
+        autoCorrect={false}
       />
     </View>
   );
 };
-export default Mytextinput;
+export default Mytextinputpassword;
